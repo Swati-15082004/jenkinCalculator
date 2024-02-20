@@ -15,12 +15,12 @@ class Calculator {
     float division(float operand_1, float operand_2){
         return(operand_1 / operand_2);
     }
-    float Square(float operand_1, float operand_2){
-        return(operand_1 / operand_2);
-    }
-    float cube(float operand_1, float operand_2){
-        return(operand_1 / operand_2);
-    }
+   // float Square(float operand_1, float operand_2)
+        //return(operand_1 / operand_2);S
+   // }
+   // float cube(float operand_1, float operand_2){
+        //return(operand_1 / operand_2);
+   // }
 
  public static void main(String[] args)
  {
@@ -40,13 +40,17 @@ class Calculator {
 
   float div_result = calc.division(operand_1, operand_2);
   System.out.println("Result of division is:"+ div_result);
-  
-  float Sqr_result = calc.division(operand_1, operand_2);
+
+  Extended_Calci calci = new Extended_Calci();
+
+  float Sqr_result = calci.Square(operand_1);
   System.out.println("Result of square is:"+ Sqr_result);
 
-  float cube_result = calc.division(operand_1, operand_2);
+  float cube_result = calci.cube(operand_1);
   System.out.println("Result of cube is:"+ cube_result);
 
+  
+  
 
  }
 }
